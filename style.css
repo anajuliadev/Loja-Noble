@@ -17,9 +17,7 @@
     margin: 0;
     padding: 0;
 }
-body{
 
-}
 .faixa-anuncio {
     display: flex;
     justify-content: space-between;
