@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
@@ -8,7 +8,7 @@
     --cor-primaria: #000000;
     --cor-secundaria: #ffffff;
 
-    --font-anuncio: "Inria Serif", serif;
+    --font-anuncio: "Abhaya Libre", serif;
     --font-logo: "Abril Fatface", serif;
     --font-padrao: "Inter", serif;
 }
@@ -114,6 +114,13 @@
     margin: 40px 70px 0 70px;
     
 }
+.box-categorias a{
+    text-decoration: none;
+
+}
+.box-categorias a:hover{
+    text-decoration: underline;
+}
 .page-categoria .img-categoria{
     width: 100%;
     
@@ -123,4 +130,46 @@
     text-align: center;
     color: var(--cor-primaria);
 
+}
+
+/* PAGE CATEGORIA */
+
+.categoria-especifica{
+}
+.categoria-especifica a:hover{
+    text-decoration: none;
+    
+}
+.categoria-especifica p{
+    text-align: justify;
+}
+.categoria-especifica .nome-produto{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: var(--font-anuncio);
+    margin: 15px 0;
+}
+
+hr{
+    margin: 10px 0;
+}
+.preco-produto{
+    display: flex;
+    justify-content: space-between;
+}
+.preco-produto .preco{
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.preco-produto .parcelamento{
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.preco-produto img{
+    width: 20px;
+    background-color: var(--cor-primaria);
+    padding: 13px;
 }
