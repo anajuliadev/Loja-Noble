@@ -52,7 +52,7 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
-
+    width: 100%;
 }
 .info-menu a{
     color: var(--cor-primaria);
@@ -72,6 +72,8 @@
     display: flex;
     flex-direction: row;
     gap: 15px;
+    width: 100%;
+    justify-content: end;
 }
 .acao-cliente button{
     border: none;
@@ -104,13 +106,15 @@
 .titulo-page p{
     font-weight: 600;
     font-size: 36px;
+    text-align: center;
+    color: var(--cor-primaria);
 }
 .box-categorias{
     display: grid;
     align-items: center;
     justify-content: center;
     grid-gap: 30px;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(217px, 1fr));
     margin: 40px 70px 0 70px;
     
 }
@@ -118,15 +122,15 @@
     text-decoration: none;
 
 }
-.box-categorias a:hover{
+/* .box-categorias a:hover{
     text-decoration: underline;
-}
+} */
 .page-categoria .img-categoria{
     width: 100%;
     
 }
-.categorias p{
-    font-weight: 800;
+.page-categoria p{
+    font-weight: 600;
     text-align: center;
     color: var(--cor-primaria);
 
@@ -134,16 +138,14 @@
 
 /* PAGE CATEGORIA */
 
-.categoria-especifica{
-}
 .categoria-especifica a:hover{
     text-decoration: none;
     
 }
 .categoria-especifica p{
-    text-align: justify;
+    text-align: left;
 }
-.categoria-especifica .nome-produto{
+.nome-produto{
     font-weight: 400;
     font-size: 16px;
     font-family: var(--font-anuncio);
@@ -152,24 +154,47 @@
 
 hr{
     margin: 10px 0;
+    color: var(--cor-primaria);
 }
 .preco-produto{
     display: flex;
     justify-content: space-between;
 }
-.preco-produto .preco{
+.preco{
     font-family: "Abhaya Libre", serif;
     font-weight: 800;
     font-size: 25px;
 }
 
-.preco-produto .parcelamento{
+.parcelamento{
     font-weight: 400;
     font-size: 13px;
+    font-family: var(--font-padrao);
 }
 
-.preco-produto img{
+button{
+    border: none;
+    background-color: transparent;
+}
+.btn-carrinho img{
     width: 20px;
     background-color: var(--cor-primaria);
     padding: 13px;
+}
+
+/* PAGE - INFORMAÇÃO DO PRODUTO */
+
+.page-info-produto{
+    margin: 20px 70px 12px 70px;
+    display: flex;
+}
+.img-blusa img{
+    width: 300px;
+}
+
+.produto{
+    margin-left: 15px;
+}
+.produto .nome-produto{
+    margin: 0;
 }
