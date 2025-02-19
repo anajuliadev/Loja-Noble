@@ -7,6 +7,7 @@
 :root{
     --cor-primaria: #000000;
     --cor-secundaria: #ffffff;
+    --cor-desativado: #d9d9d9;
 
     --font-anuncio: "Abhaya Libre", serif;
     --font-logo: "Abril Fatface", serif;
@@ -79,7 +80,6 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
-
 }
 .acao-cliente svg{
     height: 15px;
@@ -176,25 +176,85 @@ button{
     border: none;
     background-color: transparent;
 }
-.btn-carrinho img{
-    width: 20px;
+.btn-carrinho{
     background-color: var(--cor-primaria);
     padding: 13px;
+    
+}
+.btn-carrinho img{
+    width: 20px;
 }
 
 /* PAGE - INFORMAÇÃO DO PRODUTO */
 
 .page-info-produto{
-    margin: 20px 70px 12px 70px;
+    margin: 20px 70px 0 70px;
     display: flex;
+    gap: 20px;
+}
+.img-blusa{
+    width: 50%;
 }
 .img-blusa img{
-    width: 300px;
+    width: 100%;
 }
 
 .produto{
-    margin-left: 15px;
+    width: 50%;
 }
 .produto .nome-produto{
     margin: 0;
+    font-size: 25px;
+}
+.produto .parcelamento{
+    font-size: 8px;
+    color: #4f4e4e;
+}
+.tamanho-produto p{
+    font-family: var(--font-padrao);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.tamanho{
+    display: flex;
+    gap: 10px;
+
+}
+.tamanho button{
+    font-family: var(--font-padrao);
+    font-size: 10px;
+    padding: 10px 13px;
+    cursor: pointer;
+}
+.btn-tamanho-desativado{
+    background-color: var(--cor-desativado);
+    color: #a3a3a3;
+}
+.btn-tamanho{
+    background-color: transparent;
+    border: 1px solid var(--cor-primaria);
+}
+.btn-tamanho-ativo, .btn-tamanho:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    transition: all 0.5s;
+}
+
+.produto .btn-carrinho{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 15px 0;
+
+}
+.produto .btn-carrinho img{
+    width: 14px;
+}
+.produto .btn-carrinho p{
+    color: var(--cor-secundaria);
+    font-size: 11px;
 }
