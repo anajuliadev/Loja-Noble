@@ -66,6 +66,9 @@ body{
     text-align: center;
 }
 
+.titulo-login h1{
+    text-align: center;
+}
 @media screen and(max-width: 340px){
     .form-box{
         width: 100vw;
