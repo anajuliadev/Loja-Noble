@@ -258,3 +258,67 @@ button{
     color: var(--cor-secundaria);
     font-size: 11px;
 }
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-desativado: #d9d9d9;
+
+    --font-anuncio: "Abhaya Libre", serif;
+    --font-logo: "Abril Fatface", serif;
+    --font-padrao: "Inter", serif;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+.faixa-anuncio {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-primaria);
+    padding: 12px 70px;
+}
+.agrupe{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agrupe svg, .agrupe svg path{
+    width: 17px;
+    stroke: var(--cor-secundaria);
+}
+.agrupe p{
+    color: var(--cor-secundaria);
+    font-family: var(--font-anuncio);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px 12px 70px;
+}
+.info-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 100%;
+}
+.info-menu a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-family: var(--font-padrao);
+    font-size: 12px;
+}
+.menu-home a{
+    text-decoration: underline;
+}
+.logo p{
+    font-family: var(--font-logo);
+    font-size: 30px;
+}

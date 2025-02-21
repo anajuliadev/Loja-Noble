@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #ffffff;
+    --cor-desativado: #d9d9d9;
+
+    --font-anuncio: "Abhaya Libre", serif;
+    --font-logo: "Abril Fatface", serif;
+    --font-padrao: "Inter", serif;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+.faixa-anuncio {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-primaria);
+    padding: 12px 70px;
+}
+.agrupe{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.agrupe svg, .agrupe svg path{
+    width: 17px;
+    stroke: var(--cor-secundaria);
+}
+.agrupe p{
+    color: var(--cor-secundaria);
+    font-family: var(--font-anuncio);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px 12px 70px;
+}
+.info-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 100%;
+}
+.info-menu a{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-family: var(--font-padrao);
+    font-size: 12px;
+}
+.menu-home a{
+    text-decoration: underline;
+}
+.logo p{
+    font-family: var(--font-logo);
+    font-size: 30px;
+}
+
+.acao-cliente{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    justify-content: end;
+}
+.acao-cliente button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.acao-cliente svg{
+    height: 15px;
+    width: 15px;
+}
