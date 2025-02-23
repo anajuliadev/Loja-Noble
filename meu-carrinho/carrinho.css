@@ -1,0 +1,40 @@
+.produto-carrinho {
+    width: 1184px;
+    height: 1100px;
+    border: 1px solid red;
+
+} 
+
+.produto{
+    width: 1120px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+     border: 1px solid magenta;
+}
+
+.produto > img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+main {
+    display: flex;
+    flex-direction: row; 
+    border: 1px solid blue;
+}
+
+.titulo-carrinho {
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid green;
+}
+
+.titulo-carrinho-sub{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 80%;
+    align-self: flex-end ;
+    border: 1px solid rgb(116, 26, 110);
+}
