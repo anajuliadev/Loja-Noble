@@ -5,6 +5,7 @@
     <title>Tela de Cadastro</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/style.css">
+    <script src="cad.js" defer></script>
 </head>
 <header class="cabecalho">
     <div class="faixa-anuncio">
@@ -60,33 +61,33 @@
                 <div class="titulo-cadastro">
                     <h1>Cadastro</h1>
                 </div>            
-                <form class="form-box" action="" method="post">
+                <form class="form-box" id="form-cadastro">
                     <div class="box">
                         <p>Nome</p>
-                        <input type="text" name="nome" placeholder="Digite seu Nome" class="form-input">
+                        <input type="text" name="nome" placeholder="Digite seu Nome" class="form-input" id="nome">
                     </div>
                     <div class="box">
                         <p>Data de Nascimento</p>
-                        <input type="number/" name="nascimento" placeholder="Digite sua data de Nascimento" class="form-input">
+                        <input type="number/" name="nascimento" placeholder="Digite sua data de Nascimento" class="form-input" id="nascimento">
                     </div>
                     <div class="box">
                         <p>Telefone</p>
-                        <input type="number/" name="telefone" placeholder="Digite seu Telefone" class="form-input">  
+                        <input type="number/" name="telefone" placeholder="Digite seu Telefone" class="form-input" id="telefone">  
                     </div>
                     <div class="box">
                         <p>E-mail</p>
-                        <input type="email" name="email" placeholder="Digite o seu Login/e-mail" class="form-input">
+                        <input type="email" name="email" placeholder="Digite o seu Login/e-mail" class="form-input" id="email">
                         </div>   
                     <div class="box">
                         <p>Senha</p>
-                        <input type="password" name="senha" placeholder="Digite uma Senha" class="form-input">
+                        <input type="password" name="senha" placeholder="Digite uma Senha" class="form-input" id="senha">
                     </div>
                     
                     <div>            
-                        <input type="submit" value="Cadastrar" class="form-btn">
+                        <button id="btn-cadastrar" class="form-btn">Cadastrar</button>
                     </div>
                     <div>
-                        Você já tem uma conta? <a href="index.html">Efetue o seu Login</a>
+                        Você já tem uma conta? <a href="login.html">Efetue o seu Login</a>
                     </div>
                 </form>
             </div>

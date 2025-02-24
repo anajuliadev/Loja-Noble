@@ -5,6 +5,7 @@
     <title>Tela de Login</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/style.css">
+    <script src="cad.js" defer></script>
 </head>
 <header class="cabecalho">
     <div class="faixa-anuncio">
@@ -60,18 +61,18 @@
                 <div class="titulo-login">
                                         
                         <h1> Sou Cliente</h1>
-                    </div>            
-                    <form class="form-box" action="" method="post">
-                        <div class="box">
-                            <p>Login</p>
-                        <input type="text" name="nome" placeholder="Informe seu email" class="form-input">
-                    </div>
+                </div>            
+                <form class="form-box" id="form-login">
+                    <div class="box">
+                        <p>E-mail</p>
+                        <input type="email" name="email" placeholder="Digite o seu Login/e-mail" class="form-input" id="email">
+                        </div>   
                     <div class="box">
                         <p>Senha</p>
-                        <input type="password" name="senha" placeholder="Informe sua Senha" class="form-input">
+                        <input type="password" name="senha" placeholder="Digite uma Senha" class="form-input" id="senha">
                     </div>
-                    <div>
-                        <input type="submit" value="Entrar" class="form-btn">
+                    <div>            
+                        <button id="btn-login" class="form-btn">Entrar</button>
                     </div>
                     <div>
                         Ainda não sou Cliente! <a href="cadastro.html"> Crie uma Conta</a>
@@ -83,5 +84,39 @@
                 <img src="/assets/img/imagef.png" alt="">
             </div>
         </div>
+        <script>
+
+            function login() {
+                //const CLIENTE_DB = 'clientes';
+                const email = document.getElementById('email').value;
+                const senha = document.getElementById('senha').value;
+
+                function getClientes() {
+                    const clientes = localStorage.getItem(CLIENTE_DB);
+                    return clientes ? JSON.parse(clientes) : [];
+                }
+
+                function lerCliente(email) {
+                    const clientes = getClientes();
+                    return clientes.find(cliente => cliente.email === email);
+                }
+
+                const cliente = lerCliente(email);
+                if(cliente && cliente.senha === senha){
+                    alert('Seja bem-vindo(a)! ' + cliente.nome);
+                    window.open('index.html', '_self');
+                } else {
+                    alert('Email ou senha inválidos');
+                }
+            
+            }
+            function setUser() {
+                userName = localStorage.getItem('user');
+                $('.navbar').find('#account-name').html('userName');
+            }
+               
+            document.getElementById('btn-login')
+                .addEventListener('click', login);
+        </script>
     </body>
 </html>
