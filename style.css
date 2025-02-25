@@ -221,6 +221,7 @@ button{
     gap: 20px;
 
 
+
     .btn-carrinho {
         width: 100%;
     }
@@ -241,6 +242,7 @@ button{
     font-size: 25px;
 }
 .produto .parcelamento{
+
 
     font-weight: 400;
     font-size: 15px;
@@ -280,8 +282,10 @@ button{
 }
 
 
+
 .btn-carrinho{
     
+
 
     display: flex;
     align-items: center;
