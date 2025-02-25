@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
+
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
@@ -20,6 +21,7 @@
 
 
 
+
 body{
     padding: 0;
     margin: 0;
@@ -28,6 +30,7 @@ body{
 .container{
     width: 100w;
     height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +81,7 @@ body{
             margin-left: 7px;
         }
     }
+
 }
 
 @media screen and(max-width: 340px){
