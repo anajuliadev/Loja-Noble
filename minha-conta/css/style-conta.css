@@ -29,11 +29,12 @@ body{
     width: 100w;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+.container-cadastro h1{
+    text-align: center;
+}
 .form-box{ 
     display: flex;
     flex-direction: column;
@@ -71,10 +72,10 @@ body{
 
     .box-cadastro{
         
-        .cadastro{
-            
-            
-
+        .cadastro a{
+            text-decoration: none;
+            color: var(--cor-primaria);
+            margin-left: 7px;
         }
     }
 }
