@@ -225,8 +225,8 @@
                     <p>Valor</p>
                 </div>
             </div>
-            <div class="produto-carrinho">
-                <div class="produto">
+            <div id="produtos" class="produto-carrinho">
+                <div class="produto" data-id="1" data-nome="" data-preco="99.99">
                     <img src="/assets/img/carrinho-compra-vestido.png" alt="">
                     <div class="produto-info">
                         <div class="produto-descricao">
@@ -234,12 +234,15 @@
                             <p class="tamanho-produto">Tamanho: P</p>
                         </div>
                         <div class="produto-valor">
-                            <p class="valor-produto">R$ 99,99</p>
+                            <p class="valor-produto">99,99</p>
+                            <div class="info">Qtd: <span class="quantidade">0</span></div>
+                            <button id="add" class="add">+</button>
+                            <button id="remove" class="remove">-</button>
                         </div>
                     </div>
                 </div>
                 <hr>
-                <div class="produto">
+                <div class="produto" data-id="2" data-nome="" data-preco="89.99">
                     <img src="/assets/img/categoria-macaquinho.png" alt="">
                     <div class="produto-info">
                         <div class="produto-descricao">
@@ -247,12 +250,15 @@
                             <p class="tamanho-produto">Tamanho: P</p>
                         </div>
                         <div class="produto-valor">
-                            <p class="valor-produto">R$ 99,99</p>
+                            <p class="valor-produto">R$ 89,99</p>
+                            <div class="info">Qtd: <span class="quantidade">0</span></div>
+                            <button id="add" class="add">+</button>
+                            <button id="remove" class="remove">-</button>
                         </div>
                     </div>
                 </div>
                 <hr>
-                <div class="produto">
+                <div class="produto" data-id="3" data-nome="" data-preco="79.99">
                     <img src="/assets/img/categoria-vestidos.jpeg" alt="">
                     <div class="produto-info">
                         <div class="produto-descricao">
@@ -260,7 +266,10 @@
                             <p class="tamanho-produto">Tamanho: P</p>
                         </div>
                         <div class="produto-valor">
-                            <p class="valor-produto">R$ 99,99</p>
+                            <p class="valor-produto">R$ 79,99</p>
+                            <div class="info">Qtd: <span class="quantidade">0</span></div>
+                            <button id="add" class="add">+</button>
+                            <button id="remove" class="remove">-</button>
                         </div>
                     </div>
                 </div>
@@ -276,26 +285,26 @@
             </div>
             <div class="cupom">
                 <p>Cupom</p>
-                <input type="text" name="Cupom" placeholder="Insira um cupom de desconto">
+                <input id="cupom" type="text" name="Cupom" placeholder="Insira um cupom de desconto">
                 <hr>
             </div>
             <div class="calculo-valor">
                 <div class="subtotal">
                     <p>Subtotal:</p>
-                    <p>R$ 195,00</p>
+                    <p id="subtotal">R$ 195,00</p>
                 </div>
                 <div class="desconto">
                     <p>Desconto:</p>
-                    <p>- R$ 195,00</p>
+                    <p id="desconto">- R$ 195,00</p>
                 </div>
                 <div class="frete">
                     <p>Frete:</p>
-                    <p>R$ 15,00</p>
+                    <p id="frete">R$ 15,00</p>
                 </div>
                 <hr>
                 <div class="total">
                     <p>Total:</p>
-                    <p class="total-valor-resumo">R$ 200,00</p>
+                    <p id="total" class="total-valor-resumo">R$ 200,00</p>
 
                 </div>
             </div>
@@ -307,6 +316,7 @@
 
         </section>
     </main>
+    <script src="carrinho.js"></script>
 </body>
 
 </html>
