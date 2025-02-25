@@ -220,9 +220,12 @@ button{
     display: flex;
     gap: 20px;
 
+
+
     .btn-carrinho {
         width: 100%;
     }
+
 }
 .img-blusa{
     width: 50%;
@@ -239,8 +242,11 @@ button{
     font-size: 25px;
 }
 .produto .parcelamento{
+
+
     font-weight: 400;
     font-size: 15px;
+
     color: #4f4e4e;
 }
 .tamanho-produto p{
@@ -275,8 +281,12 @@ button{
     transition: all 0.5s;
 }
 
+
+
 .btn-carrinho{
     
+
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -284,6 +294,7 @@ button{
     margin: 15px 0;
 
 }
+
 .btn-carrinho img{
     width: 14px;
 }
