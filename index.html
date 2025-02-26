@@ -4,8 +4,13 @@
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" async></script>
+        <script src="./script.js" async></script>
+        
 
         <title>Noble Conceito</title>
     </head>
@@ -124,39 +129,6 @@
                 </div>
             </div>
         </main>
-        
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.swiper', {
-                loop: true,
-                spaceBetween: 10,
-                slidesPerView: 1,
-                // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                },
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false, 
-                },
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
-            document.getElementById('menuToggle').addEventListener('click', function() {
-                var menu = document.getElementById('menuMobile');
-                if (menu.style.display === 'block') {
-                    menu.style.display = 'none';
-                } else {
-                    menu.style.display = 'block';
-                }
-            });
-        </script>
 
         <footer>
             <div class="info-footer">
