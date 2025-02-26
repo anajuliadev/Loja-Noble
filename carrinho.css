@@ -1,0 +1,250 @@
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.titulo-carrinho-sub {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+.carrinho-itens {
+    min-width: 65%;
+    max-width: 65%;
+}
+
+.produto-carrinho {
+    width: 576px;
+    height: 621px;
+}
+
+.produto > img {
+    min-height: 250px;
+    max-height: 250px;
+}
+
+.produto {
+    width: 1120px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+}
+
+.produto>img {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+}
+
+.produto-info {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 730px;
+    max-width: 730px;
+    min-height: 200px;
+    max-height: 200px;
+    margin-left: 10px;
+}
+
+.produto-info p {
+    font-size: 15px;
+}
+
+.produto-descricao {}
+
+.nome-produto {
+    font-size: 15px !important;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 5px !important;
+    font-weight: 500;
+}
+
+.tamanho-produto {
+    font-size: 15px !important;
+    font-weight: 300;
+}
+
+.produto-valor {
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.valor-produto {
+    font-size: 14px !important;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.titulo-carrinho {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-carrinho-principal {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.titulo-carrinho-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 73.8%;
+    max-width: 73.8%;
+    align-self: flex-end;
+}
+
+/* Estilo base para a seção de resumo do carrinho */
+.resumo-carrinho {
+    min-width: 400px;
+    max-width: 400px;
+    max-height: 440px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: hsl(0, 18%, 90%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.resumo-carrinho * {
+    margin: 2px;
+}
+
+.titulo-carrinho-resumo p,
+.cupom p,
+.calculo-valor p,
+.total p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.titulo-carrinho-resumo p {
+    margin-left: -4px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.cupom p {
+    font-size: 1rem;
+    margin-left: -4px;
+}
+
+.titulo-carrinho-resumo hr,
+.cupom hr,
+.calculo-valor hr {
+    margin: 10px 0;
+}
+
+.cupom input {
+    width: 95%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: -5px;
+}
+
+.calculo-valor>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.total p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.total-valor-resumo {
+    font-weight: 300 !important;
+}
+
+.btn-comprar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #0f0e0e;
+    color: hwb(0 92% 5%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #0d0d0d;
+}
+
+.btn-comprar img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+    .resumo-carrinho {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .btn-comprar {
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .btn-comprar img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 621px) {
+    .calculo-valor>div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .total p {
+        font-size: 1.2rem;
+    }
+}
+
+.info {
+    font-size: .8rem;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+#add, #remove {
+    border: 1px solid black;
+    padding: 4px 8px 4px 8px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+#add:hover, #remove:hover {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
