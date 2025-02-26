@@ -6,7 +6,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
+        
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script src="./carrinho.js" async></script>
 
         <title>Noble Conceito</title>
     </head>
@@ -69,37 +71,65 @@
                     <p>Carrinho de Compras</p>
                     <hr>
                 </div>
-                <div class="produto-carrinho">
-                    <div class="produto">
+                <div id="produtos" class="produto-carrinho">
+                    <div class="produto" data-id="1" data-nome="" data-preco="99.99">
                         <img src="/assets/img/categoria-macaquinho.png" alt="">
                         <div class="agrupe-info-produto">
                             <div class="info-produto">
-                                <p class="nome-produto">Macaquinho longo na cor Bege</p>
+                                <p class="nome-produto">Vestido Longo Na Cor Verde</p>
                                 <p class="tamanho-produto">Tamanho: P</p>
                             </div>
-                            <p class="valor-produto">R$ 99,99</p>
+                            <div class="qtd">
+                                <div class="info">Qtd: <span class="quantidade">0</span></div>
+                                <div class="add-remove">
+                                    <button id="remove" class="remove">-</button>
+                                    <button id="add" class="add">+</button>
+                                </div>
+                            </div>
+                            <div class="produto-valor">
+                                <p class="valor-produto">R$ 99,99</p>
+                            </div>
                         </div>
                     </div>
                     <hr>
-                    <div class="produto">
+                    <div class="produto" data-id="2" data-nome="" data-preco="89.99">
                         <img src="/assets/img/categoria-macaquinho.png" alt="">
                         <div class="agrupe-info-produto">
                             <div class="info-produto">
                                 <p class="nome-produto">Macaquinho longo na cor Bege</p>
                                 <p class="tamanho-produto">Tamanho: P</p>
                             </div>
-                            <p class="valor-produto">R$ 99,99</p>
+                            <div class="qtd">
+                                <div class="info">Qtd: <span class="quantidade">0</span></div>
+                                <div class="add-remove">
+                                    <button id="remove" class="remove">-</button>
+                                    <button id="add" class="add">+</button>
+                                </div>
+                            </div>
+                            <div class="produto-valor">
+                                <p class="valor-produto">R$ 89,99</p>
+                            </div>
                         </div>
                     </div>
                     <hr>
-                    <div class="produto">
+                    <div class="produto" data-id="3" data-nome="" data-preco="79.99">
                         <img src="/assets/img/categoria-macaquinho.png" alt="">
                         <div class="agrupe-info-produto">
                             <div class="info-produto">
-                                <p class="nome-produto">Macaquinho longo na cor Bege</p>
+                                <p class="nome-produto">Vestido Curto Estampado</p>
                                 <p class="tamanho-produto">Tamanho: P</p>
                             </div>
-                            <p class="valor-produto">R$ 99,99</p>
+                            <div class="qtd">
+                                <div class="info">Qtd: <span class="quantidade">0</span></div>
+                                <div class="add-remove">
+                                    <button id="remove" class="remove">-</button>
+                                    <button id="add" class="add">+</button>
+                                </div>
+                            </div>
+                            <div class="produto-valor">
+                                <p class="valor-produto">R$ 79,99</p>
+
+                            </div>
                         </div>
                     </div>
                     
@@ -113,26 +143,26 @@
                 </div>
                 <div class="cupom">
                     <p class="subtitulo">Cupom</p>
-                    <input type="text" name="Cupom" placeholder="Insira um cupom de desconto">
+                    <input id="cupom" type="text" name="Cupom" placeholder="Insira um cupom de desconto">
                     <hr>
                 </div>
                 <div class="calculo-valor">
                     <div class="agrupe-calculo-valor subtotal">
                         <p class="subtitulo">Subtotal:</p>
-                        <p class="valor">R$ 195,00</p>
+                        <p id="subtotal" class="valor">R$ 0,00</p>
                     </div>
                     <div class="agrupe-calculo-valor desconto">
                         <p class="subtitulo">Desconto:</p>
-                        <p class="valor">- R$ 195,00</p>
+                        <p id="desconto" class="valor">- R$ 0,00</p>
                     </div>
                     <div class="agrupe-calculo-valor frete">
                         <p class="subtitulo">Frete:</p>
-                        <p class="valor">R$ 15,00</p>
+                        <p id="frete" class="valor">R$ 15,00</p>
                     </div>
                     <hr>
                     <div class="agrupe-calculo-valor total">
                         <p class="subtitulo">Total:</p>
-                        <p class="valor">R$ 200,00</p>
+                        <p id="total" class="valor">R$ 15,00</p>
 
                     </div>
                 </div>
@@ -154,5 +184,19 @@
                 }
             });
         </script>
+        
+        <footer>
+            <div class="info-footer">
+                <div class="logo">Noble</div>
+                <nav class="info-menu-footer">
+                    <ul>
+                        <li><a class="menu-home" href="./index.html">Home</a></li>
+                        <li><a class="menu-catalogo" href="./catalogo.html">Catálogo</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="copyright">© 2025 Noble conceito - Todos os direitos reservados</div>
+        </footer>
+        
     </body>
 </html>
