@@ -17,17 +17,88 @@
 *{ 
     margin: 0;
     padding: 0;
+    font-family: var(--font-padrao);
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--cor-secundaria);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .faixa-anuncio {
     display: flex;
     justify-content: space-between;
     background-color: var(--cor-primaria);
     padding: 12px 70px;
+}
+main {
+    flex: 1;
+    height: 100%;
+}
+
+footer {
+    
+    bottom: 0;
+    width: 100%;
+
+    .info-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 70px;
+
+        .logo {
+            width: 50%;
+            font-family: var(--font-logo);
+            font-size: 5rem;
+        }
+        .info-menu-footer {
+            width: 50%;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        color: var(--cor-primaria);
+                        font-family: var(--font-padrao);
+                        font-size: 14px;
+                        display: inline-block;
+                        padding: 8px;
+                    }
+        
+                    a:hover {
+                        color: var(--cor-secundaria);
+                        transition: 0.3s;
+                        background-color: var(--cor-primaria);
+        
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--cor-primaria);
+        padding: 12px 70px;
+        color: var(--cor-secundaria);
+    }
+
 }
 .agrupe{
     display: flex;
@@ -340,6 +411,29 @@ button{
         display: flex;
         gap: 20px;
         justify-content: space-between;
+
+        .info-produto {
+            width: 60%;
+        }
+
+        .qtd {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            .add-remove {
+                display: flex;
+            }
+        }
+
+        .produto-valor {
+            width: 20%;
+            display: flex;
+            align-items: center;
+        }
+
     }
     .nome-produto{
         font-size: 18px;
@@ -462,6 +556,10 @@ button, .btn-carrinho, .btn-tamanho {
 
                 .agrupe-info-produto {
                     flex-direction: column;
+
+                    .qtd {
+                        align-items: flex-start;
+                    }
                 }
             }
         }
@@ -520,7 +618,7 @@ button, .btn-carrinho, .btn-tamanho {
 
 #add, #remove {
     border: 1px solid black;
-    padding: 4px 8px 4px 8px;
+    padding: 8px 12px 8px 12px;
     margin: 2px;
     cursor: pointer;
     transition: 0.3s all;
