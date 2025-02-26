@@ -42,6 +42,8 @@ main {
 }
 
 footer {
+
+    padding-top: 64px;
     
     bottom: 0;
     width: 100%;
@@ -92,11 +94,10 @@ footer {
     }
 
     .copyright {
-        display: flex;
-        justify-content: space-between;
         background-color: var(--cor-primaria);
-        padding: 12px 70px;
+        padding: 16px 16px;
         color: var(--cor-secundaria);
+        text-align: center;
     }
 
 }
@@ -127,8 +128,19 @@ footer {
 .info-menu{
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 8px;
     width: 100%;
+
+    a {
+        padding: 8px;
+    }
+
+    a:hover {
+        color: var(--cor-secundaria);
+        transition: 0.3s;
+        background-color: var(--cor-primaria);
+
+    }
 }
 .info-menu a{
     color: var(--cor-primaria);
@@ -218,13 +230,31 @@ footer {
 }
 .box-categorias a{
     text-decoration: none;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
 
+    .nome-produto {
+        margin: 0;
+    }
+
+    .btn-carrinho {
+        aspect-ratio: 1/1 auto;
+        width: auto;
+        height: 100% !important;
+        margin: 0;
+        box-sizing: border-box;
+        display: block;
+    }
 }
 /* .box-categorias a:hover{
     text-decoration: underline;
 } */
 .page-categoria .img-categoria{
     width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
     
 }
 .page-categoria p{
@@ -306,6 +336,9 @@ button{
 }
 .img-blusa img{
     width: 100%;
+    max-height: 800px;
+    height: auto;
+    object-fit: cover;
 }
 
 .produto{
@@ -404,10 +437,13 @@ button{
         align-items: center;
     }
     .produto img{
-        width: 130px;
+        width: 20%;
+        
+        height: auto;
+        object-fit: cover;
     }
     .agrupe-info-produto{
-        width: 100%;
+        width: 80%;
         display: flex;
         gap: 20px;
         justify-content: space-between;
@@ -501,6 +537,8 @@ button, .btn-carrinho, .btn-tamanho {
         .menu {
             padding: 20px 20px 12px 20px;
 
+
+
             .logo {
                 text-align: center;
                 width: 100%;
@@ -549,13 +587,20 @@ button, .btn-carrinho, .btn-tamanho {
 
             .produto {
                 flex-direction: column;
+                align-items: flex-start;
 
                 img {
                     width: 100%;
+                    height: auto !important;
                 }
 
                 .agrupe-info-produto {
                     flex-direction: column;
+                    width: 100%;
+
+                    .info-produto {
+                        width: 100%;
+                    }
 
                     .qtd {
                         align-items: flex-start;
@@ -568,6 +613,14 @@ button, .btn-carrinho, .btn-tamanho {
             width: 100%;
             padding: 15px;
             box-sizing: border-box;
+        }
+    }
+
+    footer {
+        .info-footer {
+            flex-direction: column;
+            padding: 12px 20px;
+            align-items: flex-start;
         }
     }
 
