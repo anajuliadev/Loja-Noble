@@ -19,6 +19,10 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--cor-secundaria);
+}
+
 .faixa-anuncio {
     display: flex;
     justify-content: space-between;
@@ -396,7 +400,7 @@ button, .btn-carrinho, .btn-tamanho {
 
 @media screen and (max-width: 768px) {
     .cabecalho {
-        .faixa-anuncio, .info-menu, .button-login {
+        .faixa-anuncio, .info-menu {
             display: none;
         }
 
@@ -513,3 +517,18 @@ button, .btn-carrinho, .btn-tamanho {
     font-family: var(--font-padrao);
 }
 
+
+#add, #remove {
+    border: 1px solid black;
+    padding: 4px 8px 4px 8px;
+    margin: 2px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+#add:hover, #remove:hover {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    transition: 0.3s all;
+}
