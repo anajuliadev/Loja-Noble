@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
     <head>
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        <script src="./carrinho.js" async></script>
 
         <title>Noble Conceito</title>
     </head>
@@ -51,103 +54,127 @@
                 </div>
 
                 <div class="acao-cliente">
-
                     <a href="./minha-conta/cadastrar.html" class="button button-login">
-
                         <svg class="svg-login" height="200px" width="200px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000" data-darkreader-inline-fill="" style="--darkreader-inline-fill: var(--darkreader-background-000000, #202020);"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style><style class="darkreader darkreader--sync" media="screen"></style> <g> <path class="st0" d="M458.159,404.216c-18.93-33.65-49.934-71.764-100.409-93.431c-28.868,20.196-63.938,32.087-101.745,32.087 c-37.828,0-72.898-11.89-101.767-32.087c-50.474,21.667-81.479,59.782-100.398,93.431C28.731,448.848,48.417,512,91.842,512 c43.426,0,164.164,0,164.164,0s120.726,0,164.153,0C463.583,512,483.269,448.848,458.159,404.216z"></path> <path class="st0" d="M256.005,300.641c74.144,0,134.231-60.108,134.231-134.242v-32.158C390.236,60.108,330.149,0,256.005,0 c-74.155,0-134.252,60.108-134.252,134.242V166.4C121.753,240.533,181.851,300.641,256.005,300.641z"></path> </g> </g></svg>
                     </a>
-
-                    <a href="./meu-carrinho/carrinho.html" class="button button-carrinho">
-
+                    <a href="./carrinho.html" class="button button-carrinho">
                         <svg class="svg-carrinho"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000" data-darkreader-inline-fill="" style="--darkreader-inline-fill: var(--darkreader-background-000000, #202020);"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs> <style>.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style><style class="darkreader darkreader--sync" media="screen"></style> </defs> <g id="handbag"> <path class="cls-1" d="M3.41,7.23H20.59a0,0,0,0,1,0,0v12a3.23,3.23,0,0,1-3.23,3.23H6.64a3.23,3.23,0,0,1-3.23-3.23v-12A0,0,0,0,1,3.41,7.23Z"></path> <path class="cls-1" d="M8.18,10.09V5.32A3.82,3.82,0,0,1,12,1.5h0a3.82,3.82,0,0,1,3.82,3.82v4.77"></path> </g> </g></svg>
                     </a>
                 </div>
             </div>
             
         </header>
-        <main class="">
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="banners swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <img src="./assets/img/banner01.png" alt="Banner 1">
+
+        <main class="page-carrinho">
+            <section class="carrinho-itens">
+                <div class="titulo-carrinho">
+                    <p>Carrinho de Compras</p>
+                    <hr>
+                </div>
+                <div id="produtos" class="produto-carrinho">
+                    <div class="produto" data-id="1" data-nome="" data-preco="99.99">
+                        <img src="/assets/img/categoria-macaquinho.png" alt="">
+                        <div class="agrupe-info-produto">
+                            <div class="info-produto">
+                                <p class="nome-produto">Vestido Longo Na Cor Verde</p>
+                                <p class="tamanho-produto">Tamanho: P</p>
+                            </div>
+                            <div class="qtd">
+                                <div class="info">Qtd: <span class="quantidade">0</span></div>
+                                <div class="add-remove">
+                                    <button id="remove" class="remove">-</button>
+                                    <button id="add" class="add">+</button>
+                                </div>
+                            </div>
+                            <div class="produto-valor">
+                                <p class="valor-produto">R$ 99,99</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-slide" data-swiper-autoplay="2000">
-                        <img src="./assets/img/banner02.png" alt="Banner 2">
+                    <hr>
+                    <div class="produto" data-id="2" data-nome="" data-preco="89.99">
+                        <img src="/assets/img/categoria-macaquinho.png" alt="">
+                        <div class="agrupe-info-produto">
+                            <div class="info-produto">
+                                <p class="nome-produto">Macaquinho longo na cor Bege</p>
+                                <p class="tamanho-produto">Tamanho: P</p>
+                            </div>
+                            <div class="qtd">
+                                <div class="info">Qtd: <span class="quantidade">0</span></div>
+                                <div class="add-remove">
+                                    <button id="remove" class="remove">-</button>
+                                    <button id="add" class="add">+</button>
+                                </div>
+                            </div>
+                            <div class="produto-valor">
+                                <p class="valor-produto">R$ 89,99</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-slide" data-swiper-autoplay="2000">
-                        <img src="./assets/img/banner03.png" alt="Banner 3">
+                    <hr>
+                    <div class="produto" data-id="3" data-nome="" data-preco="79.99">
+                        <img src="/assets/img/categoria-macaquinho.png" alt="">
+                        <div class="agrupe-info-produto">
+                            <div class="info-produto">
+                                <p class="nome-produto">Vestido Curto Estampado</p>
+                                <p class="tamanho-produto">Tamanho: P</p>
+                            </div>
+                            <div class="qtd">
+                                <div class="info">Qtd: <span class="quantidade">0</span></div>
+                                <div class="add-remove">
+                                    <button id="remove" class="remove">-</button>
+                                    <button id="add" class="add">+</button>
+                                </div>
+                            </div>
+                            <div class="produto-valor">
+                                <p class="valor-produto">R$ 79,99</p>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-slide" data-swiper-autoplay="2000">
-                        <img src="./assets/img/banner04.png" alt="Banner 4">
+                    
+                </div>
+
+            </section>
+            <section class="resumo-carrinho">
+                <div class="titulo-carrinho">
+                    <p>Resumo</p>
+                    <hr>
+                </div>
+                <div class="cupom">
+                    <p class="subtitulo">Cupom</p>
+                    <input id="cupom" type="text" name="Cupom" placeholder="Insira um cupom de desconto">
+                    <hr>
+                </div>
+                <div class="calculo-valor">
+                    <div class="agrupe-calculo-valor subtotal">
+                        <p class="subtitulo">Subtotal:</p>
+                        <p id="subtotal" class="valor">R$ 0,00</p>
+                    </div>
+                    <div class="agrupe-calculo-valor desconto">
+                        <p class="subtitulo">Desconto:</p>
+                        <p id="desconto" class="valor">- R$ 0,00</p>
+                    </div>
+                    <div class="agrupe-calculo-valor frete">
+                        <p class="subtitulo">Frete:</p>
+                        <p id="frete" class="valor">R$ 15,00</p>
+                    </div>
+                    <hr>
+                    <div class="agrupe-calculo-valor total">
+                        <p class="subtitulo">Total:</p>
+                        <p id="total" class="valor">R$ 15,00</p>
+
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-            
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-              
-            <div class="page-categoria">
-                <div class="titulo-page">
-                    <p>Categorias</p>
+                <div class="btn-carrinho">
+                    <img src="/assets/img/carrinho.svg" alt="">
+                    <p>Comprar</p>
                 </div>
-                <div class="box-categorias">
-                    <a href="./categorias/blusas.html" class="categorias">
-                        <img class="img-categoria" src="./assets/produtos/blusa/blusa1.jpg" alt="categoria macaquinho">
-                        <p class="titulo-categoria" >Blusas</p>
-                    </a>
-                    <a  href="./categorias/vestido.html" class="categorias">
-                        <img class="img-categoria"  src="./assets/produtos/vestido/vestido1.jpg" alt="categoria macaquinho">
-                        <p class="titulo-categoria">Vestidos</p>
-                    </a>
-                    <a  href="./categorias/saia.html" class="categorias">
-                        <img class="img-categoria" src="./assets/produtos/saia/saia1.jpg" alt="categoria macaquinho">
-                        <p class="titulo-categoria">Saias</p>
-                    </a>
-                    <a  href="./categorias/calca.html" class="categorias">
-                        <img class="img-categoria" src="./assets/produtos/calca/calca2.jpg" alt="categoria macaquinho">
-                        <p class="titulo-categoria">Calças</p>
-                    </a>
-                    <a  href="./categorias/blazer.html" class="categorias">
-                        <img class="img-categoria" src="./assets/produtos/blazer/blazer3.jpg" alt="categoria macaquinho">
-                        <p class="titulo-categoria">Blazers</p>
-                    </a>
-                    <a  href="./categorias/acessorio.html"  class="categorias">
-                        <img class="img-categoria" src="./assets/produtos/acessorio/acessorio4.jpg" alt="categoria macaquinho">
-                        <p class="titulo-categoria">Acessórios</p>
-                    </a>
-                </div>
-            </div>
+
+
+            </section>
         </main>
-        
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
-            const swiper = new Swiper('.swiper', {
-                loop: true,
-                spaceBetween: 10,
-                slidesPerView: 1,
-                // If we need pagination
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                },
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false, 
-                },
-                // Navigation arrows
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-            });
-
             document.getElementById('menuToggle').addEventListener('click', function() {
                 var menu = document.getElementById('menuMobile');
                 if (menu.style.display === 'block') {
@@ -157,7 +184,7 @@
                 }
             });
         </script>
-
+        
         <footer>
             <div class="info-footer">
                 <div class="logo">Noble</div>
@@ -170,6 +197,6 @@
             </div>
             <div class="copyright">© 2025 Noble conceito - Todos os direitos reservados</div>
         </footer>
-
+        
     </body>
 </html>

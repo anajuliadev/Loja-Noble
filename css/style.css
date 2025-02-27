@@ -1,5 +1,9 @@
 /*CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
 body{
@@ -8,38 +12,49 @@ body{
 }
 
 .container{
-    width: 100w;
-    height: 100vh;
-    background: #C7CAC7;
+    width: 100%;
+    margin: 0 70px;
+    
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
+.agrupe-formulario{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+}
 .form-box{
-    width: 300px;
-    background: #fff;
+    background-color: #EEEEEE;
     font-family: Lato;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    border-top: 10px solid #1b1818;
+}
+.box {
+    text-align: left;
+    font-weight: 600;
+}
+.box p{
+    padding: 10px 0;
 }
 
 .form-box .form-input{
     border: none;
-    background: #eeeeee;
+    background-color: #ffffff;
+    color: #A3A3A3;
     width: 100%;
     height: 50px;
-    text-align: center;
-    font-size: large;
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin: 5px 0;
+    text-align: left;
 }
+
 
 .form-box .form-btn{
     border: none;
-    background: #5bb1c0;
+    background-color: #000000;
     width: 100%;
     height: 50px;
     font-size: large;
@@ -47,12 +62,18 @@ body{
     margin-bottom: 10px;
 }
 
+.titulo-cadastro h1{
+    text-align: center;
+}
+
+.titulo-login h1{
+    text-align: center;
+}
 @media screen and(max-width: 340px){
     .form-box{
         width: 100vw;
         height: 100vh;
     }
 }
-
 
 
