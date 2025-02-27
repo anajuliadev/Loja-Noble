@@ -4,8 +4,7 @@
     
     <title>Tela de Login</title>
     <link rel="stylesheet" href="./../css/style.css">
-    <link rel="stylesheet" href="./../style.css">
-    <script src="./../cad.js" defer></script>
+    <script src="./../script/conta.js" defer></script>
 </head>
 <header class="cabecalho">
     <div class="faixa-anuncio">
@@ -63,8 +62,9 @@
             <div class="agrupe-formulario">
                 <form class="form-box" id="form-login">
                     <div class="titulo">                                            
-                        <h1> Sou Cliente</h1>
-                    </div>            
+                        <h1>Sou Cliente</h1>
+                    </div>
+                    <hr>
                     <div class="box">
                         <p>E-mail</p>
                         <input type="email" name="email" placeholder="Digite o seu Login/e-mail" class="form-input" id="email">
@@ -76,10 +76,16 @@
                     <div>            
                         <button id="btn-login" class="form-btn">Entrar</button>
                     </div>
-                    <div>
-                        Ainda não sou Cliente! <a href="./cadastrar.html"> Crie uma Conta</a>
+                    <hr>
+                    <div class="box-info">
+
+                        <p>
+                            Ainda não sou Cliente! <span><a href="./cadastrar.html"> Crie uma Conta</a></span>
+                        </p>
+                        <p>
+                            Esqueceu a senha? <span><a href="./recuperar.html">Recupere a sua Senha</a></span>
+                        </p>
                     </div>
-                        Esqueceu a senha? <a href="./recuperar.html">Recupere a sua Senha</a>
                 </form>
             </div>
             <div class="image-fachada">
@@ -119,7 +125,7 @@
                 const cliente = lerCliente(email);
                 if(cliente && cliente.senha === senha){
                     alert('Seja bem-vindo(a)! ' + cliente.nome);
-                    window.open('index.html', '_self');
+                    window.open('./../index.html', '_self');
                 } else {
                     alert('Email ou senha inválidos');
                 }

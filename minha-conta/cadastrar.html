@@ -4,9 +4,8 @@
     
     <title>Tela de Cadastro</title>
     <link rel="stylesheet" href="./../css/style.css">
-    <link rel="stylesheet" href="./../style.css">
 
-    <script src="./../cad.js" defer></script>
+    <script src="./../script/conta.js" defer></script>
 </head>
 <header class="cabecalho">
     <div class="faixa-anuncio">
@@ -66,7 +65,8 @@
                 <form class="form-box" id="form-cadastro">
                     <div class="titulo">
                         <h1>Cadastro</h1>
-                    </div>            
+                    </div>       
+                    <hr>     
                     <div class="box">
                         <p>Nome</p>
                         <input type="text" name="name" placeholder="Digite seu Nome" class="form-input" id="nome">
@@ -88,15 +88,18 @@
                         <input type="password" name="senha" placeholder="Digite uma Senha" class="form-input" id="senha">
                     </div>
                     
+                    
                     <div>            
                         <button id="btn-cadastrar" class="form-btn">Cadastrar</button>
                     </div>
-                    <div class="box-cadastro">
+                    <hr>
+                    <div class="box-info">
                         Você já tem uma conta? <a href="login.html">Efetue o seu Login</a>
                     </div>
                 </form>
             </div>
             <div class="image-fachada">
+                <div class="overlay"></div>
                 <img src="./../assets/img/image-fachada.jpg" alt="">
             </div>
 
