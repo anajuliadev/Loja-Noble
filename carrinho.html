@@ -78,7 +78,7 @@
                         <img src="./assets/produtos/blusa/blusa3.jpg" alt="">
                         <div class="agrupe-info-produto">
                             <div class="info-produto">
-                                <p class="nome-produto">Blus longa Na Cor Neutra</p>
+                                <p class="nome-produto">Blusa Viscose Manga 3/4</p>
                                 <p class="tamanho-produto">Tamanho: M</p>
                             </div>
                             <div class="qtd">
@@ -95,10 +95,10 @@
                     </div>
                     <hr>
                     <div class="produto" data-id="2" data-nome="" data-preco="69.90">
-                        <img src="./assets/img/categoria-macaquinho.png" alt="">
+                        <img src="./assets/produtos/blusa/blusa5.jpg" alt="">
                         <div class="agrupe-info-produto">
                             <div class="info-produto">
-                                <p class="nome-produto">Macaquinho longo na cor Bege</p>
+                                <p class="nome-produto">Cropped em Alfaiataria</p>
                                 <p class="tamanho-produto">Tamanho: P</p>
                             </div>
                             <div class="qtd">
@@ -114,12 +114,12 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="produto" data-id="3" data-nome="" data-preco="99.99">
-                        <img src="./assets/img/categoria-macaquinho.png" alt="">
+                    <div class="produto" data-id="3" data-nome="" data-preco="220.00">
+                        <img src="./assets/produtos/blazer/blazer1.jpg" alt="">
                         <div class="agrupe-info-produto">
                             <div class="info-produto">
-                                <p class="nome-produto">Vestido Curto Estampado</p>
-                                <p class="tamanho-produto">Tamanho: P</p>
+                                <p class="nome-produto">Max Blazer Cinza</p>
+                                <p class="tamanho-produto">Tamanho: M</p>
                             </div>
                             <div class="qtd">
                                 <div class="info">Qtd: <span class="quantidade">0</span></div>
@@ -129,7 +129,7 @@
                                 </div>
                             </div>
                             <div class="produto-valor">
-                                <p class="valor-produto">R$ 99,99</p>
+                                <p class="valor-produto">R$ 220,00</p>
 
                             </div>
                         </div>
@@ -168,13 +168,25 @@
 
                     </div>
                 </div>
-                <div class="btn-carrinho">
+                <div id="comprar" class="btn-carrinho">
                     <img src="/assets/img/carrinho.svg" alt="">
                     <p>Comprar</p>
                 </div>
 
+                <div id="modal" class="modal-overlay">
+                    <div class="modal-content">
+                      <h2 id="titulo-modal">Compra Realizada!</h2>
+                      <p class="modal-compra" id="detalhes-compra"></p>
+                      <div>
+                          <button onclick="fecharModal()">Fechar</button>
+                      </div>
+                    </div>
+                </div>
+
 
             </section>
+
+            
         </main>
 
         
