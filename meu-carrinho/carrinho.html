@@ -238,6 +238,7 @@
                             <div class="info">Qtd: <span class="quantidade">0</span></div>
                             <button id="add" class="add">+</button>
                             <button id="remove" class="remove">-</button>
+                            
                         </div>
                     </div>
                 </div>
@@ -291,32 +292,41 @@
             <div class="calculo-valor">
                 <div class="subtotal">
                     <p>Subtotal:</p>
-                    <p id="subtotal">R$ 195,00</p>
+                    <p id="subtotal">R$ 0,00</p>
                 </div>
                 <div class="desconto">
                     <p>Desconto:</p>
-                    <p id="desconto">- R$ 195,00</p>
+                    <p id="desconto">- R$ 0,00</p>
                 </div>
                 <div class="frete">
                     <p>Frete:</p>
-                    <p id="frete">R$ 15,00</p>
+                    <p id="frete">R$ 0,00</p>
                 </div>
                 <hr>
                 <div class="total">
                     <p>Total:</p>
-                    <p id="total" class="total-valor-resumo">R$ 200,00</p>
+                    <p id="total" class="total-valor-resumo">R$ 0,00</p>
 
                 </div>
             </div>
-            <div class="btn-comprar">
+            <div id="comprar" class="btn-comprar">
                 <img src="/assets/img/carrinho.svg" alt="">
                 <p>Comprar</p>
             </div>
 
 
         </section>
+
+        <div id="modal" class="modal-overlay">
+            <div class="modal-content">
+              <h2 id="titulo-modal">Compra Realizada!</h2>
+              <p id="detalhes-compra"></p>
+              <button onclick="fecharModal()">Fechar</button>
+            </div>
+        </div>
     </main>
     <script src="carrinho.js"></script>
 </body>
+
 
 </html>
