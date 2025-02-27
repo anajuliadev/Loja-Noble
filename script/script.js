@@ -10,7 +10,7 @@ const swiper = new Swiper('.swiper', {
         type: 'bullets',
     },
     autoplay: {
-        delay: 2000,
+        delay: 5000,
         disableOnInteraction: false, 
     },
     // Navigation arrows

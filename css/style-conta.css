@@ -1,135 +1,142 @@
-
-.container{
-    width: 100%;
-    height: calc(100vh - 114px);
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
-    .agrupe-formulario{
-        z-index: 999;
-        max-width: 80%;
+.page-cadastrar,
+.page-login,
+.page-recuperar {
+    .container {
         width: 100%;
-
+        height: calc(100vh - 114px);
         display: flex;
-        align-items: center;
+        gap: 20px;
         justify-content: center;
+        align-items: center;
+        position: relative;
 
-    }
-
-    .form-box{ 
-        max-width: 500px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        background-color: #ffffff;
-        border: none;
-        padding: 30px;
-        
-        p {
-            font-weight: 600;
-            padding: 0;
-            padding: 8px 0;
-
-        }
-
-        .titulo{
-
-            h1 {
-                font-family: var(--font-anuncio);
-                font-weight: 800;
-                font-size: 25px;
-            }
-        }
-    
-        .form-input{
-            border: none;
-            background-color: #f1f1f1;
+        .agrupe-formulario {
+            z-index: 999;
+            max-width: 80%;
             width: 100%;
-            height: 50px;
-            text-align: center;
-            font-size: large;
-            margin-bottom: 10px;
-            border-radius: 0;
-            margin: 0;
-        }
-    
-        .form-btn{
-            border: none;
-            background-color: var(--cor-primaria);
-            border: 1px solid var(--cor-primaria);
-            width: 100%;
-            height: 50px;
-            font-size: large;
-            color: var(--cor-secundaria);
-            margin-bottom: 10px;
 
-            &:hover{
-                background-color: var(--cor-secundaria);
-                color: var(--cor-primaria);
-                transition: all 0.5s;
-            }
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
-    
-        .box-info {
+
+        .form-box {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #ffffff;
+            border: none;
+            padding: 30px;
+
             p {
-                font-weight: 400;
-            } 
-            
-            a {
-                text-decoration: underline;
-                color: var(--cor-primaria);
-                font-weight: 700;
+                font-weight: 600;
+                padding: 0;
+                padding: 8px 0;
+                font-size: 14px;
+
             }
-        }   
-    }
 
-    .image-fachada{
+            .titulo {
 
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(6px);
+                h1 {
+                    font-family: var(--font-anuncio);
+                    font-weight: 800;
+                    font-size: 25px;
+                }
+            }
 
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            backdrop-filter: blur(6px);
+            .form-input {
+                border: none;
+                background-color: #f1f1f1;
+                width: 100%;
+
+                text-align: center;
+                font-size: 13px;
+                margin-bottom: 10px;
+                border-radius: 0;
+                margin: 0;
+            }
+
+            .form-btn {
+                border: none;
+                background-color: var(--cor-primaria);
+                border: 1px solid var(--cor-primaria);
+                width: 100%;
+                height: 50px;
+                font-size: large;
+                color: var(--cor-secundaria);
+                margin-bottom: 10px;
+
+                &:hover {
+                    background-color: var(--cor-secundaria);
+                    color: var(--cor-primaria);
+                    transition: all 0.5s;
+                }
+            }
+
+            .box-info {
+                p {
+                    font-weight: 400;
+                }
+
+                a {
+                    text-decoration: underline;
+                    color: var(--cor-primaria);
+                    font-weight: 700;
+                }
+            }
         }
 
-        img {
+        .image-fachada {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                backdrop-filter: blur(6px);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
 
 
 @media screen and (max-width: 768px) {
-    .container {
-        position: relative;
-        height: calc(100vh - 73px);
-        .image-fachada {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-        }
 
-        .agrupe-formulario {
-            z-index: 999;
-            max-width: 80%;
-            width: 100%;
+    .page-cadastrar,
+    .page-login,
+    .page-recuperar {
+        .container {
+            position: relative;
+            height: auto;
+            padding: 25px 0;
+
+            .image-fachada {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+
+            .agrupe-formulario {
+                z-index: 999;
+                max-width: 90%;
+                width: 100%;
+            }
         }
     }
 }
-
-
-
